@@ -369,5 +369,3 @@ services:
       - kafka
     profiles:
       - debug
-  
-  command: docker-compose --profile all-services --profile ttk-provisioning --profile ttk-tests up
