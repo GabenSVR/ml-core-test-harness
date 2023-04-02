@@ -1,0 +1,12 @@
+services:
+  # A Docker web service
+  - type: web
+    name: Mojaloop
+    env: docker
+    repo: https://github.com/GabenSVR/ml-core-test-harness # optional
+    region: ohio # optional (defaults to oregon)
+    plan: Free # optional (defaults to starter)
+    branch: master # optional (defaults to master)
+    rootDir:
+    dockerCommand: docker-compose --profile all-services --profile ttk-provisioning --profile ttk-tests up
+    numInstances: 1
